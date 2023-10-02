@@ -1,0 +1,30 @@
+# number
+# string
+# list
+# map
+# boolean
+
+- name: ansible data types
+  hosts: localhost
+
+  vars:
+  - age: 25 # number
+  - NAME: "suresh" # string
+  - male: true # boolean
+  - skills:
+    - DevOps
+    - AWS
+    - Docker
+    - Terraform
+  - experience: # map
+      devops: 7
+      aws: 5
+  
+  tasks:
+  - name: print all data types
+    ansible.builtin.debug:
+      msg: "{{age}}"
+      msg: "{{NAME}}"
+      msg: "{{male}}"
+      msg: "{{skills}}"
+      msg: "{{experience}}"
