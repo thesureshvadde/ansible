@@ -1,0 +1,12 @@
+#playbook is list of plays, always it should start with -(hypen)
+- name: ping the node
+  host: node1
+  # this is list of tasks/modules/collections
+  tasks:
+  - name: pinging the server
+    # this is the map
+    ansible.builtin.ping:
+
+
+
+# ansible-playbook -i inventory-location -e ansible_user=centos -e ansible_password=DevOps321 01-playbook.yaml
