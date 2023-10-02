@@ -1,2 +1,5 @@
 [node1]
 172.31.94.215
+
+[node1:vars]
+place=inventory_file

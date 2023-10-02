@@ -1,0 +1,15 @@
+- name: variables from inventory file
+  hosts: node1
+  tasks:
+  - name: printing variables from inventory file
+    ansible.builtin.debug:
+      msg: "from where you coming:{{place}}"
+
+
+
+#inventory file
+# [node1]
+# 172.31.94.215
+
+# [node1:vars]
+# place=inventory_file
