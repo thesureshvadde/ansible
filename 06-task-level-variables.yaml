@@ -5,7 +5,7 @@
     land: "10 hectors"
     where: play-level
   tasks:
-  - name: inheretance and printing task level variables
+  - name: inheretance and printing task-level variables
     vars:
       land: "5 hectors"
       money: "5000$"
