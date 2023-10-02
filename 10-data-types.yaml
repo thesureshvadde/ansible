@@ -26,5 +26,5 @@
       msg: "{{age}}"
       msg: "{{NAME}}"
       msg: "{{male}}"
-      msg: "{{skills}}"
       msg: "{{experience}}"
+      msg: "{{skills}}"
