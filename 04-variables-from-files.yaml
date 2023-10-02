@@ -7,3 +7,4 @@
     ansible.builtin.debug:
       msg: "hello my name is {{NAME}} and my aim is {{AIM}}"
 
+# ansible-playbook 04-variables-from-files.yaml
