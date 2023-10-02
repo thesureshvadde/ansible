@@ -21,15 +21,19 @@
       aws: 5
   
   tasks:
-  - name: print all data types
+  - name: print number data type
     ansible.builtin.debug:
       msg: "{{age}}"
+  - name: print string data type
     ansible.builtin.debug:
       msg: "{{NAME}}"
+  - name: print boolean data type
     ansible.builtin.debug:
       msg: "{{male}}"
+  - name: print map data type
     ansible.builtin.debug:
       msg: "{{experience}}"
+  - name: print list data type
     ansible.builtin.debug:
       msg: "{{skills}}"
     
