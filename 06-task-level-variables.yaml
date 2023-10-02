@@ -1,0 +1,14 @@
+- name: task level variables
+  hosts: localhost
+  vars: 
+    money: "10000$"
+    land: "10 hectors"
+    where: play
+  tasks:
+  - name: inheretance and printing task level variables
+    vars:
+      land: "5 hectors"
+      money: "5000$"
+      level: "task" 
+    ansible.builtin.debug:
+      msg: "land={{land}};cost={{money}};level={{task}};where={{where}}"
