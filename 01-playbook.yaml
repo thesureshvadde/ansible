@@ -10,3 +10,7 @@
 
 
 # ansible-playbook -i inventory-location -e ansible_user=centos -e ansible_password=DevOps321 01-playbook.yaml
+
+# ansible-playbook -i inventory-location -u centos --ask-pass 01-playbook.yaml
+
+# ansible-playbook -i 172.31.94.215, all -e ansible_user=centos -e ansible_password=DevOps321 01-playbook.yaml
