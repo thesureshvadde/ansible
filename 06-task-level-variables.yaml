@@ -3,12 +3,12 @@
   vars: 
     money: "10000$"
     land: "10 hectors"
-    where: play
+    where: play-level
   tasks:
   - name: inheretance and printing task level variables
     vars:
       land: "5 hectors"
       money: "5000$"
-      level: "task" 
+      level: "task-level" 
     ansible.builtin.debug:
       msg: "land={{land}};cost={{money}};level={{task}};where={{where}}"
