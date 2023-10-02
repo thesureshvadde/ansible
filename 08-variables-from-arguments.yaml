@@ -1,0 +1,6 @@
+- name: variables from command line/arguments
+  hosts: localhost
+  tasks:
+  - name: printing/ accessing variables from command line/arguments
+    ansible.builtin.debug:
+      msg: "accessing variable from:{{where}}"
