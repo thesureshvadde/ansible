@@ -1,0 +1,9 @@
+- name: variables from files
+  hosts: localhost # managing ansible server itself
+  vars_files: # list
+  - variables.yaml # path of the variables file
+  tasks:
+  - name: printing vars from files
+    ansible.builtin.debug:
+      msg: "hello my name is {{NAME}} and my aim is {{AIM}}"
+
