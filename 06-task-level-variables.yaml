@@ -5,10 +5,10 @@
     land: "10 hectors"
     where: play-level
   tasks:
-  - name: hello
+  - name: inheritance and printing variables from task level
     vars:
       land: "5 hectors"
       money: "5000$"
       level: "task-level" 
     ansible.builtin.debug:
-      msg: "land={{land}};cost={{money}};level={{task}};where={{where}}"
+      msg: "land={{land}};cost={{money}};level={{level}};where={{where}}"
