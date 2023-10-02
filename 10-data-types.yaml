@@ -24,7 +24,12 @@
   - name: print all data types
     ansible.builtin.debug:
       msg: "{{age}}"
+    ansible.builtin.debug:
       msg: "{{NAME}}"
+    ansible.builtin.debug:
       msg: "{{male}}"
+    ansible.builtin.debug:
       msg: "{{experience}}"
+    ansible.builtin.debug:
       msg: "{{skills}}"
+    
