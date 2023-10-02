@@ -1,0 +1,12 @@
+- name: install packages
+  hosts: node1
+  become: yes
+  tasks:
+  - name: install/remove packages
+    ansible.builtin.yum:
+      name: "{{item.name}}"
+      state: "{{item.state}}"
+    
+    loop: # list of maps
+    - {name: 'nginx', state: 'absent'}
+    - {name: 'mailx', state: 'installed'}
