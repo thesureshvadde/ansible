@@ -4,3 +4,7 @@
   - name: printing/ accessing variables from command line/arguments
     ansible.builtin.debug:
       msg: "accessing variable from:{{where}}"
+
+
+
+# ansible-playbook -e where=commandline 08-variables-from-arguments.yaml
